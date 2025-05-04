@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skill Sharing Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-container">
+    <h2>Login or Signup</h2>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button id="login">Login</button>
+    <button id="signup">Sign Up</button>
+    <p id="auth-error" class="error"></p>
+  </div>
+
+  <div id="user-list-container" class="hidden">
+    <h2>Contact a Skill Sharer</h2>
+    <ul id="user-list"></ul>
+    <button id="logout">Logout</button>
+  </div>
+
+  <div id="chat-container" class="hidden">
+    <h2>Chat with <span id="chat-with"></span></h2>
+    <div id="messages"></div>
+    <form id="message-form">
+      <input type="text" id="message-input" placeholder="Type a message" required />
+      <button type="submit">Send</button>
+    </form>
+    <button id="back">Back to User List</button>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
